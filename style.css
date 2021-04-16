@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
   margin: 0;
+  overflow-x: hidden;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
@@ -10,20 +11,16 @@
 .desktop-nav{
  display: flex;
  margin: 2rem 1.5rem;
- /* flex-wrap: nowrap; */
 flex-direction: row;
 align-items: center;
 }
 .desktop-nav >.desktop_logo {
  flex: 2;
 justify-content: flex-start;
- /* margin-left: auto; */
 }
 .desktop_logo +.desktop-text{
  flex: 0.6;
- /* align-self: center; */
  justify-content: flex-end;
- /* margin-right: auto; */
 }
 .desktop-text + .desktop-button{
  background-color: #f3164c;
@@ -35,7 +32,48 @@ justify-content: flex-start;
 .desktop-button:hover{
  background: blueviolet;
 }
+.Main-head
+{
+margin: 2rem 1.5rem;
+ display: grid;
+  grid-gap: 0.7rem;
+ grid-template-areas: 
+ 'header header second-header'
+ 'info info second-header';
+ 
+ grid-template-columns: repeat(3,auto)
+}
+.Main-head > .header{
+ border-radius:15px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+  background: #fff;
+ grid-area: header;
+}
+.header > .sub-header{
+ display: flex;
+ 
+ flex-direction: row;
+}
 
+.sub-header > h3 {
+ justify-self: flex-start;
+}
+.sub-header > h5 {
+justify-self: flex-end;
+ 
+}
+.Main-head > .second-header{
+ border-radius:15px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+  background: #fff;
+ grid-area: second-header;
+}
+.Main-head > .info{
+ border-radius:15px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+  background: #fff;
+ grid-area: info;
+}
 @media screen and (max-width: 960px){
  .mobile-nav{
   display: block;
@@ -44,6 +82,7 @@ justify-content: flex-start;
   display: flex;
   flex-direction: row;
   width: 100%;
+  top: 0rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
   background: #fff;
  }
@@ -56,8 +95,6 @@ justify-content: flex-start;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
   background: #fff;
   display: flex;
- /* justify-content: flex-start; */
-  /* top: 3.4rem; */
  right: -100%;
  position: fixed;
  align-items: center;
@@ -65,13 +102,10 @@ justify-content: flex-start;
  transition: all 0.4s cubic-bezier(1, 0, 0, 1);
 }
  .logo {
-  margin: 0.8rem 1rem;
-  /* width: 100%; */
-  /* margin-left: 10px; */
-  /* margin-top: 7px; */
-  /* height: 6%; */ 
+  top: 0.7rem;
+  left: 1.3rem;
+  /* margin: 0.8rem 1rem; */
   position: fixed;
-
 }
 
 .hamburger{
@@ -83,12 +117,9 @@ justify-content: flex-start;
   height: 1.1rem;
   display: flex;
   flex-direction: column;
-  /* top: 7px;
-  right: 20px; */
   position: fixed;
   padding: 10px;
   cursor: pointer;
-  /* margin-bottom: 3px  */;
   justify-content: space-around;
 }
 .change{
@@ -96,11 +127,7 @@ justify-content: flex-start;
 }
  
 .bar{
-   /* width: 100%; */
    height: 0.1rem;
-/*   width: 100%;
-height: 5%; */
-  /* margin: 0; */
   background: #Ec5480;
   transition: all 0.3s;
 }
@@ -116,16 +143,26 @@ height: 5%; */
 
 .nav_items {
   list-style: none;
-  margin: 20px;
+  margin: 3.1rem 2.9rem;
 }
-
 .nav_links {
   text-decoration: none;
   font-size: 20px;
-  font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.6px;
   color: #000;
 }
-
+.Main-head
+{
+ display: block;
+ 
+}
+.Main-head > .header{
+  
+}
+.Main-head > .second-header{
+   
+}
+.Main-head > .info{
+}
 }
