@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.mobile-nav{
+ display: none;
+}
+.desktop-nav{
+ display: flex;
+ margin: 2rem 1.5rem;
+ /* flex-wrap: nowrap; */
+flex-direction: row;
+align-items: center;
+}
+.desktop-nav >.desktop_logo {
+ flex: 2;
+justify-content: flex-start;
+ /* margin-left: auto; */
+}
+.desktop_logo +.desktop-text{
+ flex: 0.6;
+ /* align-self: center; */
+ justify-content: flex-end;
+ /* margin-right: auto; */
+}
+.desktop-text + .desktop-button{
+ background-color: #f3164c;
+ color: #fff;
+ border-radius: 7px;
+ border: none;
+ padding: 0.8rem;
+}
+.desktop-button:hover{
+ background: blueviolet;
+}
+
+@media screen and (max-width: 960px){
+ .mobile-nav{
+  display: block;
+  height: 3.3rem;
+  position:fixed;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+  background: #fff;
+ }
+ .desktop-nav{
+  display: none;
+ }
+.mobile-navbar{
+ width: 75%;
+ height: 100%;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+  background: #fff;
+  display: flex;
+ /* justify-content: flex-start; */
+  /* top: 3.4rem; */
+ right: -100%;
+ position: fixed;
+ align-items: center;
+ background-color: #fff;
+ transition: all 0.4s cubic-bezier(1, 0, 0, 1);
+}
+ .logo {
+  margin: 0.8rem 1rem;
+  /* width: 100%; */
+  /* margin-left: 10px; */
+  /* margin-top: 7px; */
+  /* height: 6%; */ 
+  position: fixed;
+
+}
+
+.hamburger{
+ top: 0.4rem;
+ right: 1.3rem;
+  border: 1px solid #Ec5480;
+  border-radius: 70%;
+  width: 1.2rem;
+  height: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  /* top: 7px;
+  right: 20px; */
+  position: fixed;
+  padding: 10px;
+  cursor: pointer;
+  /* margin-bottom: 3px  */;
+  justify-content: space-around;
+}
+.change{
+  right: 0%;
+}
+ 
+.bar{
+   /* width: 100%; */
+   height: 0.1rem;
+/*   width: 100%;
+height: 5%; */
+  /* margin: 0; */
+  background: #Ec5480;
+  transition: all 0.3s;
+}
+.change .bar_1{
+  transform: rotate(-45deg) translate(-5px, 1px) ;
+}
+.change .bar_3 {
+  transform: rotate(45deg) translate(-4px, -1px) ;
+}
+.navbar_list {
+  margin:30px 30px;
+}
+
+.nav_items {
+  list-style: none;
+  margin: 20px;
+}
+
+.nav_links {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+}
