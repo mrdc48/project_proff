@@ -3,6 +3,7 @@
   margin: 0;
   overflow-x: hidden;
   padding: 0;
+  
   font-family: 'Montserrat', sans-serif;
 }
 .mobile-nav{
@@ -32,8 +33,7 @@ justify-content: flex-start;
 .desktop-button:hover{
  background: blueviolet;
 }
-.Main-head
-{
+.Main-head{
 margin: 2rem 1.5rem;
  display: grid;
   grid-gap: 0.7rem;
@@ -95,7 +95,7 @@ margin: 1.5rem 0.8rem;
  padding: 2rem;
  grid-area: second-header;
 }
-.hr_line1{
+.next > .hr_line1{
   margin-left: 80px;
   margin-top:  1rem;
   width: 100px;
@@ -156,7 +156,7 @@ margin: 1.5rem 0.8rem;
  .logo {
   top: 0.7rem;
   left: 1.3rem;
-  /* margin: 0.8rem 1rem; */
+  /* margin: 0.2rem 1rem; */
   position: fixed;
 }
 
@@ -207,14 +207,40 @@ margin: 1.5rem 0.8rem;
 .Main-head
 {
  display: block;
+ margin: 3.9rem 1rem;
+ padding: 0.8rem;
  
 }
-.Main-head > .header{
-  
+ .second_sub-header > a{
+  margin-left: 1rem;
+ font-size: 0.8rem; 
+ }
+ 
+ .second_sub-header > .second_sub-header-button{
+ margin-right: 1rem; 
+  padding: 0.3rem; 
 }
+.second_sub-header > .hr_line{
+  width: 4rem;
+} 
+.header>.third_sub-header {
+ font-size: 0.7rem;
+}
+
 .Main-head > .second-header{
-   
+   margin-top: 1rem;
+}
+.another {
+ padding: 0rem;
+ font-size: 0.8rem;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
 }
 .Main-head > .info{
+ margin-top: 1rem;
 }
+ .info >.hr_line1 {
+  margin-left: 4rem;
+ }
 }
